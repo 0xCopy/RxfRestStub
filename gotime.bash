@@ -16,5 +16,5 @@ r=bin/run.sh
 set -x
 h=$1
 p=$2
-${r} ${o[*]} srv.MyServer ${h:=$(hostname -f)} ${p:=8888}
+${r} ${o[*]} relaxfactory.Server ${h:=$(hostname -f)} ${p:=8888}
 

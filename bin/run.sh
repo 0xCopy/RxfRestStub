@@ -41,7 +41,7 @@ EOF
 echo " * you must be using oracle jdk."
 echo " * you must have no spaces in any of your classpaths."
 [[ $(basename $0) == rerun* ]] && omit=true;
-[[ $omit ]] || mvn install -Prel
+[[ $omit ]] || mvn install #-Prel
 [[ $omit ]] || mvn dependency:build-classpath -Dmdep.outputFile=target/cp.txt
 {
 pre=$PWD
